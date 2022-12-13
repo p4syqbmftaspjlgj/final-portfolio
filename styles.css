@@ -1,0 +1,256 @@
+#cs1300-gallery {
+  background-color: white;
+  font-family: Verdana, sans-serif;
+  border: 2px solid #000000;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Sans Symbols 2', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+body {
+  background-color: white;
+}
+
+
+h1 {
+  font-size: 70px;
+  font-family: sans-serif;
+  color: black;
+  transition: opacity 0.2s;
+  letter-spacing: -0.08em;
+}
+
+h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  font-family: 'Noto Sans Symbols 2', sans-serif;
+  justify-content: baseline;
+  margin: 0;
+}
+
+.line1 {
+  height:0px;
+  width:1px;
+  border-bottom:1px 
+  solid #000;
+  
+  -webkit-animation: increase 3s;
+  -moz-animation:    increase 3s; 
+  -o-animation:      increase 3s; 
+  animation:         increase 3s; 
+  animation-fill-mode: forwards;
+}
+
+a { 
+  text-decoration: none; 
+  color: rgb(103, 103, 103);
+}
+
+a:visited { 
+  text-decoration: none; 
+ }
+
+ a:hover { 
+  text-decoration: none; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
+  @keyframes increase {
+      100% {
+          width: 100%;
+      }
+  }
+
+  .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid #000;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+    background-color: white;
+  }
+
+.header {
+  display: flex;
+  margin: 200px;
+  margin-top: 0px;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  background-color: white;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.box { 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 500px; 
+  height: 340px; 
+  margin: 10px;
+  padding-inline: 20px;
+  padding: 20px;
+  height: 300px; 
+  border: 1px solid #000000;
+  font-size: 20px;
+  transition: 0.3s;
+ }
+
+ .box:hover{ 
+   background-color: rgb(92, 67, 252);
+   transform: scale(1.05);
+   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+ }
+
+ .portfolio-item {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  margin: 100px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.flex-block {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: white;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+.flex-item {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+  margin: 0;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  display: flex;
+}
+
+ul {
+  width: 100%;
+  margin: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style:   none;
+  font-family: sans-serif;
+  font-size: 25px;
+  padding: 0;
+  color: black;
+}
+
+li {
+  color: black;
+  font-family:'Noto Sans Symbols 2', sans-serif;
+  font-size: 30px;
+  letter-spacing: -0.07em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+Symbols+2&family=Questrial&family=Raleway:wght@200;700&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">    <!-- import CSS styles -->
+    <style> @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+Symbols+2&family=Raleway:wght@200&family=Work+Sans:wght@100;200;300&display=swap'); </style>
+    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&family=M+PLUS+1p:wght@100;400;700&family=Noto+Sans+Symbols+2&family=Questrial&family=Raleway:wght@200;700&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">anonymous</a></li>
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="index.html#design">design</a></li>
+      <li><a href="index.html#words">writing</a></li>
+    </ul>
+    </nav>
+    <div class="portfolio-item">
+      <h1>responsive redesign</h1>
+      <div>
+        <h2>Analyzing a website's accessibility issues to design a more responsive and user-friendly alternative</h2>
+      </div>
+      <div class="line1"></div>
+    </div>
+    <div class="flex-block">
+      <div class="flex-item" style="width: 500px; height: 330px;">
+        <h1 style="font-size: 40px; font-weight: 700;">what is this?</h1>
+        <h2 style="font-size: 18px">
+          By creating lo-fi and hi-fi prototypes for various screen sizes, I redesigned and rebuilt an existing webpage to make it easier to use and more responsive. I first chose a website that I felt could benefit from some reworking, built prototypes to address the flaws I idenfitied, and then built a new website from scratch that was also better suited to adapt to different screen sizes.          </h2>
+      </div>
+      <div class="flex-item" style="width: 500px; height: 330px;">
+        <h1 style="font-size: 40px; font-weight: 700;">why is it important?</h1>
+      <h2 style="font-size: 18px">
+        It’s easy to tell when a website looks bad, but much harder to know how to fix it. After this assignment, I feel better equip to identify and analyze flaws in an existing website, particularly relating to accessibility. Not only can I now tell what makes a website hard to use or look at, but I also have practiced how to make it better.        </h2>
+      </div>
+    </div>
+    <div class="flex-block" style="align-items:center; height: 400px;">
+      <div class="flex-item" style="width: 500px; height: 350px;">
+        <h1 style="font-size: 40px; font-weight: 700;">the original website</h1>
+        <h2 style="font-size: 18px">
+          It’s evident that this website was not created with accessibility in mind. Immediately, the user is bombarded with information from several different locations. There is no clear hierarchy to information and navigation. Text is in different colors and emphasized in red text for no apparent reason. The photos uses are also pretty unappetizing — one of the bagels is literally grey.          </h2>
+      </div>
+        <div class="flex-item">
+        <img style="width: 500px; height: 350px" src="original-website.png">
+        </div>
+    </div>
+    <div class="flex-block" style="justify-content: center">
+      <div class="flex-item" style="width: fit-content; height: 400px;">
+        <h1 style="font-size: 60px; font-weight: 700;">first, let's identify key usability issues.</h1>
+      </div>
+    </div>
+    <div class="flex-block" style="justify-content: space-evenly;" >
+      <div class="flex-item" style="width: 25%; height: 350px;">
+        <h1 style="font-size: 30px; font-weight: 700;">small text</h1>
+        <h2 style="font-size: 18px">
+          1) text throughout the website, particularly in the navigation bar, is extremely small and hard to read
+          <br>
+          2) title text is indistinguishable from body text
+          <br>
+          3) logo text is tucked away in the corner
+          <br>
+        </h2>
+      </div>
+      <div class="flex-item" style="width: 25%; height: 350px">
+        <h1 style="font-size: 30px; font-weight: 700;">disorganized info</h1>
+      <h2 style="font-size: 18px">
+          1) key information such as location, hours, and how to order online is scattered in disparate blocks of text
+          <br>
+          2) redundant information, such as a location tab and a listed location in the left column
+          <br>
+          3)  information that is not important is highlighted in red, adding confusion
+          <br>
+        </h2>
+      </div>
+      <div class="flex-item" style="width: 25%; height: 350px">
+        <h1 style="font-size: 30px; font-weight: 700;">low-contrast elements</h1>
+      <h2 style="font-size: 18px">
+          1) a dark background against similarly colored text makes it hard to read
+          <br>
+          2) text is not high contrast, an issue exacerbated by the small text size
+          <br>
+          3) dark color theme generally makes the site unpleasant to use and look at
+          <br>
+        </h2>
+      </div>
+    </div>
+    <div class="flex-block">
+      <div class="flex-item" style="width: 500px; height: fit-content;">
+        <h1 style="font-size: 40px; font-weight: 700;">analyzing accessibility with the WebAIM WAVE test</h1>
+        <h2 style="font-size: 18px">
+          I thought the WebAIM WAVE program detected all the issues I initially found with the website, and more – with 13 contrast errors and 109 small text errors, it’s clear this website could benefit from some reworking. I also found the website's text to be low contrast and disorganized, which are just a few of the problems the test detected. I was surprised, however, by the extent of the issues. Though I certainly found this website hard to use, the test helped me recognize how harmful these qualities would be for someone who is colorblind or who might struggle to read small text without glasses.        </h2>
+      </div>
+        <div class="flex-item">
+        <img style="height: 500px" src="summary-report.png">
+        </div>
+    </div>
+      <div class="flex-block" style="justify-content: center">
+        <div class="flex-item" style="width: fit-content; height: 150px;">
+          <h1 style="font-size: 60px; font-weight: 700;">now, let's draw up some prototypes.</h1>
+        </div>
+      </div>
+      <div class="flex-block" style="align-items:center">
+        <div class="flex-item" style="width: 800px; display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">visual style guide</h1>
+          <h2 style="font-size: 18px; text-align: center;">
+          Drawing inspiration and color themes from the original website, the new style guide streamlines fonts, headings and other design decisions to create a more cohesive palate.
+          </div>
+          <div class="flex-item">
+          <img style="width: 1200px" src="styleguide.png">
+          </div>
+      </div>
+      <div class="flex-block" style="align-items:center">
+        <div class="flex-item" style="width: 800px; display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">visual style guide</h1>
+          <h2 style="font-size: 18px; text-align: center;">
+          Drawing inspiration and color themes from the original website, the new style guide streamlines fonts, headings and other design decisions to create a more cohesive palate.
+          </div>
+          <div class="flex-item">
+          <img style="width: 1200px" src="styleguide.png">
+          </div>
+      </div>
+      <div class="flex-block" style="align-items:center">
+        <div class="flex-item" style="width: 800px; display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">lo-fi prototypes</h1>
+          <h2 style="font-size: 18px; text-align: center;">
+          This lo-fi protoype sketches out the desktop design, which features a clear title, a nav-bar for easy navigation, and the store's contact information front and center. With takeout-centered restaurants like a bagel shop, having contact information for easy ordering is key.
+          </div>
+          <div class="flex-item">
+          <img style="width: 1000px" src="desktop-wireframe-1.png">
+          </div>
+      </div>
+      <div class="flex-block">
+        <div class="flex-item" style="display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">tablet lo-fi prototypes</h1>
+          <img style="width: 650px" src="lo-fi-tablet.png">
+        </div>
+          <div class="flex-item" style="display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">mobile lo-fi prototypes</h1>
+          <img style="width: 650px" src="lo-fi-phone.png">
+          </div>
+      </div>
+      <div class="flex-block" style="align-items:center">
+        <div class="flex-item" style="width: 800px; display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">hi-fi prototypes</h1>
+          <h2 style="font-size: 18px; text-align: center;">
+          These hi-fi protoypes, drawn with Figma, visualize the final design choices using the style guide and the lo-fi prototypes.
+          </div>
+          <div class="flex-item">
+          <img style="width: 1000px" src="hi-fi-desktop.png">
+          </div>
+      </div>
+      <div class="flex-block">
+        <div class="flex-item" style="display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">tablet lo-fi prototypes</h1>
+          <img style="width: 650px" src="hi-fi-tablet.png">
+        </div>
+          <div class="flex-item" style="display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">mobile lo-fi prototypes</h1>
+          <img style="width: 650px" src="hi-fi-mobile.png">
+          </div>
+      </div>
+      <div class="flex-block" style="align-items:center">
+        <div class="flex-item" style="width: 800px; display: flex; flex-direction: column; align-items: center;">
+          <h1 style="font-size: 40px; font-weight: 700;">the redesigned site</h1>
+          <h2 style="font-size: 18px">
+            And finally, the redesigned website, responsiveness and all.       
+          </div>
+          <div class="flex-item">
+          <a href="https://p4syqbmftaspjlgj.github.io/responsive-redesign/redesigned-site.html"><img style="width: 1000px" src="redesigned-site-preview.png"></a>
+          </div>
+      </div>
+      <div class="flex-block" style="justify-content: center; width: 100%; margin: 0; height: 120px">
+        <div class="flex-item" style="display: flex; flex-direction: column; align-items: center; width: fit-content; height: 150px;">
+          <h1 style="font-size: 30px; font-weight: 700;">get in touch!</h1>
+          <h2>anonymous@gmail.com</h2>
+        </div>
+      </div>
+    </body>
+</html>
